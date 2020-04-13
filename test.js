@@ -2,6 +2,6 @@ function myFunction() {
   console.log('joe')
 }
 
-setTimeout(function () {
+setInterval(function () {
   myFunction()
-})
+}, 2000)
