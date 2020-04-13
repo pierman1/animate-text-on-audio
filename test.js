@@ -1,4 +1,4 @@
-alert(document.getElementById("p1").firstChild.nodeValue);
+alert('initiated');
 
 function myFunction() {
   console.log('joe!!!!!')
