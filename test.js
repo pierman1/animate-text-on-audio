@@ -1,3 +1,2 @@
-(function {
-  console.log('YEAAH ITS WORKING')
-})()
+
+console.log('YEAAH ITS WORKING')
