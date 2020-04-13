@@ -1,2 +1,7 @@
+function myFunction() {
+  console.log('joe')
+}
 
-console.log('YEAAH ITS WORKING')
+setTimeout(function () {
+  myFunction()
+})
