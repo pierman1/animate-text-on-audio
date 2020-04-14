@@ -14,9 +14,9 @@ function getParameterByName(name, url) {
 function myFunction() {
   var scripts = document.getElementsByTagName("script")
 
-  for (let item of scripts) {
-    console.log(item);
-  }
+  Array.from(scripts).forEach(function(item) {
+     console.log(item);
+  });
 }
 
 setTimeout(function () {
