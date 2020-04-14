@@ -12,7 +12,8 @@ function getParameterByName(name, url) {
 }
 
 function myFunction() {
-  console.log('url', getParameterByName('text', document.currentScript)
+  var scripts = document.getElementsByTagName("script")
+  console.log('url', scripts)
 }
 
 setInterval(function () {
