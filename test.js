@@ -1,6 +1,7 @@
 alert('initiated');
 
 function getParameterByName(name, url) {
+  console.log('-->', name, url)
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, '\\$&');
   var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -15,7 +16,7 @@ function myFunction() {
 
   Array.from(scripts).forEach(function(script) {
      console.log('script!!', getParameterByName('text', script.src));
-     if (getParameterByName('piertsfreebanner', script.src)) {
+     if (getParameterByName('text', script.src)) {
        console.log('!! script detected !!')
      } 
   });
