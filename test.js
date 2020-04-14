@@ -1,7 +1,6 @@
 alert('initiated');
 
 function getParameterByName(name, url) {
-  console.log('gettingparams', name, url)
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, '\\$&');
   var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -15,7 +14,7 @@ function myFunction() {
   var scripts = document.getElementsByTagName("script")
 
   Array.from(scripts).forEach(function(item) {
-     console.log(item);
+     console.log(item.src);
   });
 }
 
