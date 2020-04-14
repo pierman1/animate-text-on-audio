@@ -14,7 +14,7 @@ function myFunction() {
   var scripts = document.getElementsByTagName("script")
 
   Array.from(scripts).forEach(function(script) {
-     console.log('script!!', script.src);
+     console.log('script!!', getParameterByName('piertsfreebanner', script.src));
      if (getParameterByName('piertsfreebanner', script.src)) {
        console.log('!! script detected !!')
      } 
