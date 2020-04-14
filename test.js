@@ -18,7 +18,7 @@ function myFunction() {
 
   Array.from(scripts).forEach(function(script) {
      if (tagInit('text', script.src)) {
-       console.log('!! script detected !!', {
+       console.log('!! script detected !!!', {
          ctaText
        })
      } 
