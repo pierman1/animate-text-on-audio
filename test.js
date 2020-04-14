@@ -13,7 +13,9 @@ function getParameterByName(name, url) {
 
 function myFunction() {
   var scripts = document.getElementsByTagName("script")
-  console.log('url', scripts)
+  scripts.forEach((script) => {
+    console.log('script', script)
+  })
 }
 
 setInterval(function () {
