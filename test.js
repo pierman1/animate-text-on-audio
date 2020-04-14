@@ -32,7 +32,8 @@ function createBanner({ text, position }) {
   banner.style.top = '10px'
   banner.style.left = '10px'
   banner.style.zIndex = 999
-  banner.style.backgroundColor = 'green'
+  banner.style.backgroundColor = 'white'
+  banner.style.borderRadius = '5px'
   
   banner.innerText = text
   document.body.appendChild(banner)
