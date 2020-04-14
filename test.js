@@ -3,7 +3,6 @@ alert('initiated');
 var ctaText = ''
 
 function tagInit(name, url) {
-  console.log('-->', name, url)
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, '\\$&');
   var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -18,9 +17,10 @@ function myFunction() {
   var scripts = document.getElementsByTagName("script")
 
   Array.from(scripts).forEach(function(script) {
-     console.log('script!!', tagInit('text', script.src));
      if (getTagInfo('text', script.src)) {
-       console.log('!! script detected !!', ctaText)
+       console.log('!! script detected !!', {
+         ctaText
+       })
      } 
   });
 }
