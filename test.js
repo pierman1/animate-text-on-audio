@@ -15,6 +15,9 @@ function myFunction() {
 
   Array.from(scripts).forEach(function(script) {
      console.log('script', script.src);
+     if (getParameterByName('piertsfreebanner', script.src)) {
+       console.log('!! script detected !!')
+     } 
   });
 }
 
