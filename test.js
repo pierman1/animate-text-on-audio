@@ -30,7 +30,7 @@ function createBanner({ text, position }) {
 
   var banner = document.createElement('div')
   banner.classList.style.position = 'fixed'
-  banner.classList.style.top = 0'
+  banner.classList.style.top = 0
   banner.classList.style.left = 0
   banner.classList.style.backgroundColor = 'green'
   
