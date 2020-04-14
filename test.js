@@ -26,6 +26,8 @@ function tagInit(name, url) {
 }
 
 function createBanner({ text, position }) {
+  console.log('starting creating banner')
+
   var banner = document.createElement('div')
   banner.classList.style.position = 'fixed'
   banner.classList.style.top = 0'
@@ -36,7 +38,7 @@ function createBanner({ text, position }) {
   document.body.appendChild(banner)
 }
 
-function myFunction() {
+function startUp() {
   var scripts = document.getElementsByTagName("script")
 
   Array.from(scripts).forEach(function(script) {
@@ -49,5 +51,5 @@ function myFunction() {
 }
 
 setTimeout(function () {
-  myFunction()
+  startUp()
 }, 2000)
