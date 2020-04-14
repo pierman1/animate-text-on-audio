@@ -17,7 +17,7 @@ function myFunction() {
   var scripts = document.getElementsByTagName("script")
 
   Array.from(scripts).forEach(function(script) {
-     if (getTagInfo('text', script.src)) {
+     if (tagInit('text', script.src)) {
        console.log('!! script detected !!', {
          ctaText
        })
