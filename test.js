@@ -20,7 +20,7 @@ function myFunction() {
   Array.from(scripts).forEach(function(script) {
      console.log('script!!', tagInit('text', script.src));
      if (getTagInfo('text', script.src)) {
-       console.log('!! script detected !!')
+       console.log('!! script detected !!', ctaText)
      } 
   });
 }
