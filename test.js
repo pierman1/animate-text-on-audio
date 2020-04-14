@@ -25,6 +25,17 @@ function tagInit(name, url) {
   return true
 }
 
+function createBanner({ text, position }) {
+  var banner = document.createElement('div')
+  banner.classList.style.position = 'fixed'
+  banner.classList.style.top = 0'
+  banner.classList.style.left = 0
+  banner.classList.style.backgroundColor = 'green'
+  
+  banner.innerText = text
+  document.body.appendChild(banner)
+}
+
 function myFunction() {
   var scripts = document.getElementsByTagName("script")
 
@@ -32,7 +43,7 @@ function myFunction() {
      if (tagInit('text', script.src)) {
        bannerObject.text = parseQuery('text', script.src)
        bannerObject.position = parseQuery('position', script.src)
-       console.log('bannerObject', bannerObject)
+       createBanner(bannerObject)
      } 
   });
 }
