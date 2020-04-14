@@ -26,7 +26,7 @@ function tagInit(name, url) {
 }
 
 function createBanner({ text, position }) {
-  console.log('starting creating banner')
+  console.log('starting creating banner', { text, position })
 
   var banner = document.createElement('div')
   banner.classList.style.position = 'fixed'
