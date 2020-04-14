@@ -13,8 +13,8 @@ function getParameterByName(name, url) {
 function myFunction() {
   var scripts = document.getElementsByTagName("script")
 
-  Array.from(scripts).forEach(function(item) {
-     console.log(item.src);
+  Array.from(scripts).forEach(function(script) {
+     console.log('script', script.src);
   });
 }
 
