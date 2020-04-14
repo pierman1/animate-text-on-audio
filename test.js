@@ -1,7 +1,18 @@
 alert('initiated');
 
+function getParameterByName(name, url) {
+  console.log('gettingparams', name, url)
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '))
+}
+
 function myFunction() {
-  console.log('joe!!!!!')
+  console.log('url', getParameterByName('text', window.location.href))
 }
 
 setInterval(function () {
