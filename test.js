@@ -34,6 +34,7 @@ function createBanner({ text, position }) {
   banner.style.zIndex = 999
   banner.style.backgroundColor = 'white'
   banner.style.borderRadius = '5px'
+  banner.style.padding = '15px'
   banner.style.boxShadow = '0px 10px 18px 0px rgba(0,0,0,0.75)'
 
   banner.innerText = text
