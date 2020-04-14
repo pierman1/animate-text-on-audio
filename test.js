@@ -12,10 +12,9 @@ function getParameterByName(name, url) {
 }
 
 function myFunction() {
-  console.log('url', getParameterByName('text', window.location.href))
+  console.log('url', getParameterByName('text', document.currentScript.href))
 }
 
 setInterval(function () {
   myFunction()
 }, 2000)
-
