@@ -13,9 +13,12 @@ function getParameterByName(name, url) {
 
 function myFunction() {
   var scripts = document.getElementsByTagName("script")
-  console.log('ssss', scripts)
+
+  for (let item of scripts) {
+    console.log(item);
+  }
 }
 
-setInterval(function () {
+setTimeout(function () {
   myFunction()
 }, 2000)
