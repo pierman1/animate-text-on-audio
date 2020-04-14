@@ -36,7 +36,7 @@ function createBanner({ text, position }) {
   }
   
   if (position === 'bottom-right') {
-    banner.style.left = '10px'
+    banner.style.right = '10px'
   }
 
   banner.style.zIndex = 999
