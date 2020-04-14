@@ -30,8 +30,8 @@ function myFunction() {
 
   Array.from(scripts).forEach(function(script) {
      if (tagInit('text', script.src)) {
-       bannerObject.text = tagInit('text', script.src)
-       bannerObject.position = tagInit('position', script.src)
+       bannerObject.text = parseQuery('text', script.src)
+       bannerObject.position = parseQuery('position', script.src)
        console.log('bannerObject', bannerObject)
      } 
   });
