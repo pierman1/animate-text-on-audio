@@ -1,6 +1,8 @@
 alert('initiated');
 
-function getParameterByName(name, url) {
+var ctaText = ''
+
+function tagInit(name, url) {
   console.log('-->', name, url)
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, '\\$&');
@@ -8,15 +10,16 @@ function getParameterByName(name, url) {
     results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return '';
-  return decodeURIComponent(results[2].replace(/\+/g, ' '))
+  ctaText = results[2].replace(/\+/g, ' ')
+  return true
 }
 
 function myFunction() {
   var scripts = document.getElementsByTagName("script")
 
   Array.from(scripts).forEach(function(script) {
-     console.log('script!!', getParameterByName('text', script.src));
-     if (getParameterByName('text', script.src)) {
+     console.log('script!!', tagInit('text', script.src));
+     if (getTagInfo('text', script.src)) {
        console.log('!! script detected !!')
      } 
   });
