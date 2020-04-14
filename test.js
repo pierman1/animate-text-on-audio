@@ -35,7 +35,7 @@ function createBanner({ text, position }) {
   banner.style.backgroundColor = 'white'
   banner.style.borderRadius = '5px'
   banner.style.padding = '15px'
-  banner.style.boxShadow = '0px 10px 18px 0px rgba(0,0,0,0.75)'
+  banner.style.boxShadow = '0px 10px 18px 0px rgba(0,0,0,0.3)'
 
   banner.innerText = decodeURI(text)
   document.body.appendChild(banner)
