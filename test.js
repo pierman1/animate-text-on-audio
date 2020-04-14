@@ -1,7 +1,7 @@
 
 var bannerObject = {
   text: '',
-  position: ''
+  position: 'bottom-left'
 }
 
 function parseQuery(name, url) {
@@ -30,7 +30,15 @@ function createBanner({ text, position }) {
   var banner = document.createElement('div')
   banner.style.position = 'fixed'
   banner.style.bottom = '10px'
-  banner.style.left = '10px'
+
+  if (position === 'bottom-left') {
+    banner.style.left = '10px'
+  }
+  
+  if (position === 'bottom-right') {
+    banner.style.left = '10px'
+  }
+
   banner.style.zIndex = 999
   banner.style.backgroundColor = 'white'
   banner.style.borderRadius = '5px'
