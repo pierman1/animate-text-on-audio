@@ -1,4 +1,3 @@
-alert('initiated');
 
 var bannerObject = {
   text: '',
@@ -30,8 +29,8 @@ function createBanner({ text, position }) {
 
   var banner = document.createElement('div')
   banner.style.position = 'fixed'
-  banner.style.top = 0
-  banner.style.left = 0
+  banner.style.top = '10px'
+  banner.style.left = '10px'
   banner.style.zIndex = 999
   banner.style.backgroundColor = 'green'
   
