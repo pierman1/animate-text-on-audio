@@ -2,7 +2,7 @@ alert('initiated');
 
 var bannerObject = {
   text: '',
-  postion: ''
+  position: ''
 }
 
 function parseQuery(name, url) {
